@@ -1,0 +1,694 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayat ANSSAIEN</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/ayat.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="styles/tailwind.config.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+
+    <script src="JS/animation.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akaya Telivigala">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
+    
+</head>
+
+<html>
+
+<body class="dark" id="body">
+
+
+    <div class=" lg:hight-screen h-auto bg-light-bg dark:bg-dark-bg relative">
+        <!-- contact -->
+        <div 
+            class=" fix-contact w-12 h-28 bg-gradient-to-r from-light-bar dark:from-custom-red  rounded-lg flex flex-col items-center justify-center fixed top-1/2 right-0">
+           <a href="https://github.com/AyatANSSAIEN" target="_blank"><i class="hover:text-custom-red text-base text-light-bg fa fa-github" aria-hidden="true"></i></a>
+           <a href="https://www.linkedin.com/in/ayatanssaien/" target="_blank"><i class="hover:text-custom-red text-base text-light-bg fa fa-linkedin" aria-hidden="true"></i></a>
+           <a href="https://www.youtube.com/@codingfever895" target="_blank"> <i class="hover:text-custom-red text-base text-light-bg fa fa-youtube" aria-hidden="true"></i></a>
+           <a href="mailto: ayatanssaien@gmail.com" target="_blank"> <i class="hover:text-custom-red text-base text-light-bg fa fa-envelope" aria-hidden="true"></i></i></a>
+           <!-- <a href="tel:0706374371" target="_blank"> <i class="hover:text-custom-red text-base text-light-bg fa fa-phone" aria-hidden="true"></i></i></a> -->
+        </div><!-- ./contact -->
+
+        <!-- bar -->
+        <div class="bar h-10 w-full bg-light-bar dark:bg-dark-bar fixed grid justify-items-end flex items-center pr-10">
+            <div>
+                <i id="moon" class="hover:text-custom-red fa fa-moon-o text-2xl text-light-bg" aria-hidden="true"
+                    onclick="lightmode()"></i>
+                <i id="sun" class="hover:text-custom-red fa fa-sun-o   text-2xl text-light-bg hidden" aria-hidden="true"
+                    onclick="darkmode()"></i>
+            </div>
+
+        </div><!-- ./bar -->
+
+        <!-- home -->
+        <div class="flex flex-col-reverse sm:flex-row w-full">
+          
+            <!-- intro -->
+            <div class="w-full h-screen flex flex-col xl:pl-24 xl:pt-32">
+                <div class="px-10">
+                    <p class=" intro font-sans-serif text-3xl font-bold text-dark-bg dark:text-light-bg">
+                        <span class="span-anime text-custom-red  text-3xl xl:text-5xl "> I’m ready </span>
+                        <span class="span-anime">to</span>
+                        <span class="span-anime">create</span>
+                        <span class="span-anime">your</span>
+                        <span class="span-anime">Applications</span>
+                        <span class="span-anime">and</span>
+                        <span class="span-anime">manage</span>
+                        <span class="span-anime">your</span>
+                        <span class="span-anime">projects</span>
+                        <span class="span-anime">with many programming</span>
+                        <span class="span-anime">languages and tools 🤍</span>
+                    </p>
+
+
+                </div>
+                <div class=" w-full px-20 mt-24 flex flex-row justify-between buttons">
+                    <div
+                        class="flex-1 mx-4 h-12 bg-gradient-to-b from-light-bar dark:from-custom-red hover:bg-light-bar dark:hover:bg-dark-bar rounded-lg flex items-center justify-center">
+                        <span class="font-sans-serif text-xl font-bold text-dark-bg dark:text-light-bg ">
+                            <a href="assets/documents/CV-Ayat-ANSSAIEN-FR.pdf"  target="_blank">CV</a>
+                        </span>
+                        
+                    </div>
+                    <div
+                        class="flex-1 mx-4 h-12 bg-gradient-to-b from-light-bar dark:from-custom-red hover:bg-light-bar dark:hover:bg-dark-bar rounded-lg flex items-center justify-center">
+                        <span class="font-sans-serif text-xl font-bold text-dark-bg dark:text-light-bg ">
+                            <a href="#about" onclick="scrollToAbout()">whoami</a>
+                        </span>
+                    </div>
+                </div>
+            </div><!-- ./intro -->
+            <!-- Profile -->
+            <div class="w-full  mt-24 mb-12 pl-10 xl:pl:0">
+
+                <div>
+                    <img class="w-3/4 -mb-12 xl:-mb-20  " src="assets/images/profile.png" alt="profile">
+                </div>
+                <div class="flex flex-col  items-end pr-20 pt-0 ">
+                    <p id="MyName" class=" font-akaya text-5xl xl:text-7xl font-bold text-dark-bg dark:text-light-bg">
+                        Ayat Anssaien</p>
+                    <p class="  pr-20 font-akaya text-3xl xl:text-5xl font-bold text-dark-bg dark:text-light-bg">Full
+                        Stack
+                        <span class=" animate-charcter text-custom-red">DEVELOPER</span>
+                    </p>
+                </div>
+            </div><!-- ./Profile -->
+
+
+        </div><!-- ./home -->
+
+        <!-- Go to About  Button -->
+        <div class="w-full flex items-center justify-center ">
+            <div
+                class="rounded-full w-28 h-28  bg-light-bar dark:bg-dark-bar down absolute -bottom-14 self-center flex justify-center p-4">
+
+                <a href="#about"  onclick="scrollToAbout()"> <i
+                        class="fa fa-chevron-down fa-chevron-right text-2xl text-dark-bg"></i></a>
+
+            </div>
+        </div>  <!-- ./Go to About Button  -->
+
+    </div>
+    <!-- Animated circles -->
+    <ul class="circles">
+        <li>Curious</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li>Motivated</li>
+        <li>creative</li>
+        <li></li>
+        <li></li>
+    </ul><!-- ./Animated circles -->
+
+
+    <!-- About -->
+    <div id="about" class="m-0 bg-light-bar dark:bg-dark-bar w-full min-h-screen">
+        <p class="tag ml-4 pt-8 lg:ml-20"> &lt;h1&gt; </p>
+
+        <p class="  pl-4 xl:pl-24  font-sans-serif font-bold text-6xl text-left  text-custom-red">
+
+            <span
+                class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">w</span><span
+                class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">h</span><span
+                class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">o</span><span
+                class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">a</span><span
+                class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">m</span><span
+                class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">i</span>
+
+
+        </p>
+        <p class="tag ml-4 lg:ml-20"> &lt;/h1&gt; </p>
+        <p class="tag ml-4 lg:ml-20"> &lt;p&gt; </p>
+        <div
+            class="relative flex flex-row items-center justify-center overflow-hidden bg-gray-50 p-8 sm:p-12">
+
+
+            <div class="w-full max-w-4xl rounded-md  p-14">
+                <div class="flex flex-col items-center">
+                    <div id="about-text" class="mt-2  tfont-sans-serif  text-xl xl:text-3xl font-bold text-dark-bg dark:text-light-bg word">...
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="tag ml-4 lg:ml-20"> &lt;/p&gt; </p>
+
+    </div> <!-- ./About -->
+
+    <!-- Skills -->
+    <div id="skills" class="bg-light-bg dark:bg-dark-bg w-full xl:h-screen h-auto">
+
+
+
+        <div class=" h-auto xl:h-screen flex flex-col   xl:flex-row justify-center items-center">
+
+            <div class="h-100  flex-1">
+                <div class=" flex-1">
+                    <p class="tag mt-10 ml-4 lg:ml-20"> &lt;html&gt; </p>
+                    <p class="tag ml-4 lg:ml-20"> &lt;body&gt; </p>
+                    <p class="tag ml-4 lg:ml-20"> &lt;h1&gt; </p>
+
+                    <p class="  pl-4 xl:pl-24  font-sans-serif font-bold text-6xl text-left  text-custom-red">
+
+                        <span
+                            class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">S</span><span
+                            class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">k</span><span
+                            class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">i</span><span
+                            class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">l</span><span
+                            class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">l</span><span
+                            class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">s</span>
+                        <span
+                            class="span-anime transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">
+                            &</span>
+
+                    </p>
+                    <p class="  pl-4 xl:pl-24  font-sans-serif font-bold text-6xl text-left  text-custom-red">
+                        <span
+                            class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110 ">
+                            E</span><span
+                            class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110 ">
+                            x</span><span
+                            class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110 ">
+                            p</span><span
+                            class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110 ">
+                            e</span><span
+                            class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110 ">
+                            r</span><span
+                            class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110 ">
+                            i</span><span
+                            class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110 ">
+                            e</span><span
+                            class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110 ">
+                            n</span><span
+                            class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110 ">
+                            c</span><span
+                            class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110 ">
+                            e</span>
+
+                    </p>
+
+                    <p class="tag ml-4 lg:ml-20"> &lt;/h1&gt; </p>
+                    <!-- redirect to contact us -->
+                    <p class="tag ml-4 lg:ml-20"> &lt;p&gt; </p>
+
+                    <div
+                        class="skills pl-4 xl:pl-24  pr-4 xl:pr-16 text-justify text-dark-bg dark:text-light-bg font-sans-serif ">
+
+                        <p>
+
+                        <p class="mt-4">
+                            During my studies, I learned, not only how to be a programmer, but I also how to be a good
+                            team player, a good time manager and a good thinker.
+                        </p>
+
+                        <p class="mt-4">
+                            These qualities helped me a lot to have good professional experiences with different
+                            companies such as Grupo Avalon and DIZERN.
+                        </p>
+
+                        <p class="mt-4">
+                            Generally I developed more than 10 projects based on different technologies while
+                            collaborating with talented people.
+                        </p>
+
+                        </p>
+                    </div>
+                    <p class="tag ml-4 lg:ml-20"> &lt;/p&gt; </p>
+
+
+                    <p class="tag ml-4 lg:ml-20"> &lt;a&gt; </p>
+
+                    <a href="#contact" class=" ml-4 xl:ml-16 mt-4 text-light-bar  hover:text-light-bg "> Let’s make
+                        something special.</a>
+                    <p class="tag ml-4 lg:ml-20"> &lt;/a&gt; </p>
+
+
+                    <p class="tag ml-4 lg:ml-20"> &lt;/body&gt; </p>
+                    <p class="tag ml-4 lg:ml-20"> &lt;/html&gt; </p>
+
+                </div>
+            </div>
+            <div class="h-100 flex-1 ">
+                <span class="content"></span>
+            </div>
+
+
+
+        </div>
+
+
+
+    </div><!-- ./Skills -->
+
+<!-- Portfolio -->
+    <div id="portfolio" class="py-4 portfolio bg-light-bg dark:bg-dark-bg w-full h-auto">
+
+
+
+        <section class="min-h-screen w-full flex justify-center items-center  sm:mt-0">
+            <div class="w-full px-10 sm:px-0">
+
+        
+                <p class="tag ml-4 lg:ml-20"> &lt;h1&gt; </p>
+
+                <p class="  pl-4 xl:pl-24  font-sans-serif font-bold text-6xl text-left  text-custom-red">
+
+                    <span
+                        class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">P</span><span
+                        class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">o</span><span
+                        class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">r</span><span
+                        class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">t</span><span
+                        class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">f</span><span
+                        class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">o</span><span
+                        class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">l</span><span
+                        class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">i</span><span
+                        class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">o</span>
+
+
+                </p>
+                <p class="tag ml-4 lg:ml-20"> &lt;/h1&gt; </p>
+                <p class="tag ml-4 lg:ml-20"> &lt;div class="swiper"&gt; </p>
+
+                <div class="m-auto max-w-5xl " data-aos="zoom-in">
+                    <div class="swiper mySwiper">
+
+                        <div class="swiper-wrapper">
+
+                            <div
+                                class="swiper-slide w-full md:w-1/3 flex flex-col items-center md:flex-row justify-center md:items-start py-10">
+
+                                <iframe class="w-full sm:mx-4 md:w-1/2 h-80"
+                                    src="https://www.youtube.com/embed/3fyOS_R6dDs" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+
+                                <div class="m-0 md:m-0 md:w-52 mt-4 md:mt-0 md:ml-4 bg">
+                                    <h1 class="font-bold text-slate-900 dark:text-white text-2xl mb-2">Clean App
+                                        - Manage cleaning services
+                                    </h1>
+                                    <p class="font-thin text-xs text-light-bg">React native, JavaScript, Spring-boot
+                                    </p>
+
+                                    <p class="text-slate-900 dark:text-white mt-10 uppercase">Project description</p>
+                                    <div class="w-24 h-1 bg-slate-900 dark:bg-white rounded-full"></div>
+
+                                    <p class="font-medium text-light-bg text-xs mt-2">The main idea of this application
+                                        is to manage the persons
+                                        that offer mobile cleaning services.</p>
+
+                                    <div class="mt-10 space-x-2">
+                                        <a href="https://github.com/AouladLahceneOussama/clean-services-app-front"
+                                            target="_blank"
+                                            class="bg-blue-900 text-white px-4 py-2 rounded-md font-bold">
+                                            <i class="fa fa-github"></i> View </a>
+                                        <a href="https://github.com/AouladLahceneOussama/clean-services-app-back"
+                                            target="_blank"
+                                            class="bg-blue-700 text-white px-4 py-2 rounded-md font-bold">
+                                            <i class="fa fa-github"></i> Back </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div
+                                class="swiper-slide w-full md:w-1/3 flex flex-col items-center md:flex-row justify-center md:items-start py-10">
+                                <iframe class="w-full md:w-1/2 h-80" src="https://www.youtube.com/embed/58Pu107025c"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <div class="m-auto md:m-0 md:w-52 mt-4 md:mt-0 md:ml-4">
+                                    <h1 class="font-bold text-slate-900 dark:text-white text-2xl mb-2">
+                                        Car Rent Application
+                                    </h1>
+                                    <p class="font-thin text-xs text-light-bg">Laravel, Livewire, TailwindCSS</p>
+
+                                    <p class="text-slate-900 dark:text-white mt-10 uppercase">Project description</p>
+                                    <div class="w-24 h-1 bg-slate-900 dark:bg-white rounded-full"></div>
+
+                                    <p class="w-full font-medium text-light-bg text-xs mt-2">
+                                        The main idea of this project
+                                        is to create a platform where the users can rent their own car to others in a defined time.
+                                    </p>
+
+                                    <div class="mt-10 space-x-2">
+                                        <a href="https://github.com/AouladLahceneOussama/peer-to-peer-car-location"
+                                            target="_blank"
+                                            class="bg-blue-900 text-white px-4 py-2 rounded-md font-bold">
+                                            <i class="fa fa-github"></i> Code </a>
+                                        <a href="http://peer-to-peer-car-location.herokuapp.com/" target="_blank"
+                                            class="bg-blue-500 text-white px-4 py-2 rounded-md font-bold">
+                                            <i class="fa fa-link"></i> Demo </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="swiper-slide w-full md:w-1/3 flex flex-col items-center md:flex-row justify-center md:items-start py-10">
+                                <iframe class="w-full md:w-1/2 h-80" src="https://www.youtube.com/embed/p1bfhNRzB2E"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <div class="m-auto md:m-0 md:w-52 mt-4 md:mt-0 md:ml-4">
+                                    <h1 class="font-bold text-slate-900 dark:text-white text-2xl mb-2">Art certification - Administration</h1>
+                                    <p class="font-thin text-xs text-light-bg">Laravel, Livewire, TailwindCSS</p>
+
+                                    <p class="text-slate-900 dark:text-white mt-10 uppercase">Project description</p>
+                                    <div class="w-24 h-1 bg-slate-900 dark:bg-white rounded-full"></div>
+                                    <p class="font-medium text-light-bg text-xs mt-2">
+                                        This project is about certification of
+                                        arts, where the users ask or search for certif of their own arts.
+                                    </p>
+
+                                    <div class="mt-10 space-x-2">
+                                        <a href="https://github.com/AouladLahceneOussama/art-certification-managment"
+                                            target="_blank"
+                                            class="bg-blue-900 text-white px-4 py-2 rounded-md font-bold">
+                                            <i class="fa fa-github"></i> Code </a>
+                                        <a href="http://art-certification-managment.herokuapp.com/" target="_blank"
+                                            class="bg-blue-500 text-white px-4 py-2 rounded-md font-bold">
+                                            <i class="fa fa-link"></i> Demo </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-next ">
+                            <i
+                                class="fa fa-chevron-right text-xl text-light-bar transition duration-500 ease-in-out"></i>
+                        </div>
+                        <div class="swiper-button-prev ">
+                            <i
+                                class="fa fa-chevron-left text-xl text-light-bar transition duration-500 ease-in-out"></i>
+                        </div>
+                        <div class="swiper-pagination text-light-bar"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <p class="tag mt-10 ml-4 lg:ml-20"> &lt;/div&gt; </p>
+
+        <!-- Portfolio -->
+
+
+    </div>
+<!-- Portfolio -->
+    <!-- Contact Form -->
+    <div id="contact" class="bg-light-bg dark:bg-dark-bg w-full  h-auto">
+        <p class="tag ml-4 lg:ml-20"> &lt;h1&gt; </p>
+
+        <p class="  pl-4 xl:pl-24  font-sans-serif font-bold text-6xl text-left  text-custom-red">
+
+            <span
+                class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">C</span><span
+                class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">o</span><span
+                class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">n</span><span
+                class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">t</span><span
+                class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">a</span><span
+                class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">c</span><span
+                class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">t</span> <span
+                class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">M</span><span
+                class="span-anime  transition ease-in-out delay-10 hover:text-light-bar  hover:-translate-y-1 hover:scale-110">e</span>
+
+
+        </p>
+        <p class="tag ml-4 lg:ml-20"> &lt;/h1&gt; </p>
+
+        <!-- Container for demo purpose -->
+        <div class="container py-4 px-6 mx-auto">
+
+           
+            <!-- Section: Design Block -->
+            
+            <section class=" text-gray-800">
+                
+                <div class="relative overflow-hidden bg-no-repeat bg-cover rounded-lg"
+                    style="background-position: 50%; background-image: url('http://perfectdeal.ee/wp-content/uploads/2017/11/bottom-red-bg.jpg'); height: 300px;">
+                
+                </div>
+                <div class="container text-gray-800 px-4 md:px-12">
+                    <div class="block rounded-lg shadow-lg py-10 md:py-12 px-4 md:px-6"
+                        style="margin-top: -200px; background: hsla(0, 0%, 100%, 0.2); backdrop-filter: blur(30px);">
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-x-6 mb-12">
+                            <div class="mb-12 lg:mb-0 text-center mx-auto">
+                                <svg class="w-8 h-8 text-light-bar transparent mb-6 mx-auto"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                    <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                                    <path fill="currentColor"
+                                        d="M248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm82.29 357.6c-3.9 3.88-7.99 7.95-11.31 11.28-2.99 3-5.1 6.7-6.17 10.71-1.51 5.66-2.73 11.38-4.77 16.87l-17.39 46.85c-13.76 3-28 4.69-42.65 4.69v-27.38c1.69-12.62-7.64-36.26-22.63-51.25-6-6-9.37-14.14-9.37-22.63v-32.01c0-11.64-6.27-22.34-16.46-27.97-14.37-7.95-34.81-19.06-48.81-26.11-11.48-5.78-22.1-13.14-31.65-21.75l-.8-.72a114.792 114.792 0 0 1-18.06-20.74c-9.38-13.77-24.66-36.42-34.59-51.14 20.47-45.5 57.36-82.04 103.2-101.89l24.01 12.01C203.48 89.74 216 82.01 216 70.11v-11.3c7.99-1.29 16.12-2.11 24.39-2.42l28.3 28.3c6.25 6.25 6.25 16.38 0 22.63L264 112l-10.34 10.34c-3.12 3.12-3.12 8.19 0 11.31l4.69 4.69c3.12 3.12 3.12 8.19 0 11.31l-8 8a8.008 8.008 0 0 1-5.66 2.34h-8.99c-2.08 0-4.08.81-5.58 2.27l-9.92 9.65a8.008 8.008 0 0 0-1.58 9.31l15.59 31.19c2.66 5.32-1.21 11.58-7.15 11.58h-5.64c-1.93 0-3.79-.7-5.24-1.96l-9.28-8.06a16.017 16.017 0 0 0-15.55-3.1l-31.17 10.39a11.95 11.95 0 0 0-8.17 11.34c0 4.53 2.56 8.66 6.61 10.69l11.08 5.54c9.41 4.71 19.79 7.16 30.31 7.16s22.59 27.29 32 32h66.75c8.49 0 16.62 3.37 22.63 9.37l13.69 13.69a30.503 30.503 0 0 1 8.93 21.57 46.536 46.536 0 0 1-13.72 32.98zM417 274.25c-5.79-1.45-10.84-5-14.15-9.97l-17.98-26.97a23.97 23.97 0 0 1 0-26.62l19.59-29.38c2.32-3.47 5.5-6.29 9.24-8.15l12.98-6.49C440.2 193.59 448 223.87 448 256c0 8.67-.74 17.16-1.82 25.54L417 274.25z" />
+                                </svg>
+                                <h6 class="font-medium">Morocco</h6>
+                            </div>
+                            <div class="mb-12 lg:mb-0 text-center mx-auto">
+                                <svg class="w-8 h-8 text-light-bar mb-6 mx-auto" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 384 512">
+                                    <path fill="currentColor"
+                                        d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                                    </path>
+                                </svg>
+                                <h6 class="font-medium">Tetouan, 93 000</h6>
+                            </div>
+                            <div class="mb-6 md:mb-0 text-center mx-auto">
+                                <svg class="w-8 h-8 text-light-bar mb-6 mx-auto" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512">
+                                    <path fill="currentColor"
+                                        d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
+                                    </path>
+                                </svg>
+                                <h6 class="font-medium">+ 212 7 06 37 43 71</h6>
+                            </div>
+
+                        </div>
+                        <p class="tag ml-4 lg:ml-20"> &lt;form&gt; </p>
+                        <div class="max-w-[700px] mx-auto">
+                           
+                            <form action="mailto:ayatanssaien@gmail.com" method="post" enctype="text/plain">
+                                <div class="form-group mb-6">
+                                    <input type="text"  name="name" class="form-control block
+                w-full
+                px-3
+                py-1.5
+                text-base
+                font-normal
+                text-gray-700
+                bg-white bg-clip-padding
+                border border-solid border-gray-300
+                rounded
+                transition
+                ease-in-out
+                m-0
+                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7"
+                                        placeholder="Name">
+                                </div>
+                                <div class="form-group mb-6">
+                                    <input type="email"  name="mail" class="form-control block
+                w-full
+                px-3
+                py-1.5
+                text-base
+                font-normal
+                text-gray-700
+                bg-white bg-clip-padding
+                border border-solid border-gray-300
+                rounded
+                transition
+                ease-in-out
+                m-0
+                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput8"
+                                        placeholder="Email address">
+                                </div>
+                                <div class="form-group mb-6">
+                                    <textarea name="comment" class="
+                form-control
+                block
+                w-full
+                px-3
+                py-1.5
+                text-base
+                font-normal
+                text-gray-700
+                bg-white bg-clip-padding
+                border border-solid border-gray-300
+                rounded
+                transition
+                ease-in-out
+                m-0
+                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+              " id="exampleFormControlTextarea13" rows="3" placeholder="Message"></textarea>
+                                </div>
+
+                                <button type="submit" class="
+              
+              px-6
+              py-2.5
+              bg-light-bar
+              text-white
+              font-medium
+              text-xs
+              leading-tight
+              uppercase
+              rounded
+              shadow-md
+              hover:bg-blue-700 hover:shadow-lg
+              focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+              active:bg-blue-800 active:shadow-lg
+              transition
+              duration-150
+              ease-in-out">Send</button>
+                            </form>
+                        </div>
+                        <p class="tag ml-4 lg:ml-20"> &lt;/form&gt; </p>
+                    </div>
+                </div>
+
+            </section>
+            <!-- Section: Design Block -->
+
+        </div>
+        <!-- Container for demo purpose -->
+
+
+
+    </div>
+    <!-- ./Contact Form -->
+</body>
+      <!-- footer -->
+      <footer class="text-center bg-dark-bg text-white">
+        <div class="px-6 pt-6">
+            <div class="w-full flex justify-center mb-6">
+
+                <a href="https://facebook.com/Ayat.G.i.c2022/" target="_blank"
+                    class="rounded-full flex items-center justify-center border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                    <i class="fa fa-facebook-f "></i>
+                </a>
+
+                <a href="https://github.com/AyatANSSAIEN" target="_blank"
+                    class="rounded-full flex items-center justify-center border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                    <i class="fa fa-github "></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/ayatanssaien" target="_blank"
+                    class="rounded-full flex items-center justify-center border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                    <i class="fa fa-linkedin "></i>
+                </a>
+
+                <a href="mailto:ayatanssaien@gmail.com" target="_blank"
+                    class="rounded-full flex items-center justify-center border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                    <i class="fa fa-envelope "></i>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="text-center py-4" style="background-color: rgba(0, 0, 0, 0.2);">
+
+            <p> <b> ANSSAIEN Ayat </b> - Portfolio</p>
+            <p class="font-thin text-xs"> Copyright © <span id="year"></span></p>
+        </div>
+    </footer>
+
+<script>
+
+    document.querySelector('.content').style.color = "#fff";
+    function darkmode() {
+
+        document.documentElement.classList.add("dark")
+        document.getElementById('MyName').style.textShadow = "0px 0px #000"
+        document.getElementById('moon').classList.remove("hidden")
+        document.getElementById('sun').classList.add("hidden")
+
+        // localStorage.theme = "dark"
+
+
+        document.querySelector('.content').style.color = "#fff";
+    }
+
+    function lightmode() {
+
+        document.documentElement.classList.remove("dark")
+        document.getElementById('body').classList.remove("dark")
+        document.getElementById('moon').classList.add("hidden")
+        document.getElementById('sun').classList.remove("hidden")
+        document.getElementById('MyName').style.textShadow = "-2px -2px #fff"
+        // localStorage.theme = "light"
+
+        document.querySelector('.content').style.color = "#000";
+    }
+
+    const myTags = [
+        'JavaScript', 'CSS', 'HTML',
+        'C', 'React', 'JSON',
+        'UML', 'Java', 'git',
+        'Angular', 'Spring', 'Oracle',
+        'JPA', 'MySQL', 'Tailwind', 'laravel', 'Scrum', 'KANBAN'
+    ];
+
+    var tagCloud = TagCloud('.content', myTags, {
+
+        // radius in px
+        radius: 250,
+
+        // animation speed
+        // slow, normal, fast
+        maxSpeed: 'fast',
+        initSpeed: 'fast',
+
+        // 0 = top
+        // 90 = left
+        // 135 = right-bottom
+        direction: 135,
+
+        // interact with cursor move on mouse out
+        keep: true
+
+    });
+
+    if (localStorage.theme === "light") {
+        console.log("heee")
+        document.querySelector('.content').style.color = "#000";
+    }
+
+    else {
+        document.querySelector('.content').style.color = "#fff";
+    }
+
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+
+
+
+
+</script>
+<script src="js/swiper-bundle.min.js"></script>
+
+
+</html>
