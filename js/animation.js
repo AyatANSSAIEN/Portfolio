@@ -65,6 +65,7 @@ function scrollToAbout(){
 // });
 window.onload = function () {
   window.onscroll = function () { 
+    console.log(document.body.scrollTop)
     if (document.body.scrollTop > 250) {
       scrollToAbout();
     }
