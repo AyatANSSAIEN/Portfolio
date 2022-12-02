@@ -56,6 +56,7 @@ function scrollToAbout(){
     wordflick();
   }
   else 
+  console.log("scroll")
   called = true;
 }
 // $(document).ready(function () {
