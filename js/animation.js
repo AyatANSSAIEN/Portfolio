@@ -1,7 +1,7 @@
 
 var words = [ 'Hi!',' I am a computer science engineer!',
   ' My first "Hello world!" was in 2018, I started learning C language, and I was passionate about solving problems with this "fast" and "easy to learn" language.',
-  'In 2019 I created My first web application based on HTML, CSS, JS, PHP and MySQL.','And... the result was better than expected!','Then I learned the basics of Java, that helped me develop many desktop applications using JavaFX and Java Swing...',
+  'In 2019 I created My first web application based on HTML, CSS, JS, PHP and MySQL.','And... the result was better than expected!','Then I learned the basics of Java, that helped me to develop many desktop applications using JavaFX and Java Swing...',
   'I didn\'t stop there and tried to learn more about these languages, so I tried to build projects  (Mobile/Web apps) using frameWorks.',' At this level I was working with React JS, Angular Laravel/Liveware and Spring.',
   'Even though I started my journey as a Full Stack Developer,','I still find my self in  analyzing customer needs and developing the Backend part.'
   , 'There is more! But Let\'s stop in there 😜                                         '],
@@ -53,11 +53,9 @@ var wordflick = function () {
 
 function scrollToAbout(){
   if(!called){
-    console.log("call me")
     wordflick();
   }
   else 
-  console.log("called")
   called = true;
 }
 // $(document).ready(function () {
@@ -65,7 +63,6 @@ function scrollToAbout(){
 // });
 window.onload = function () {
   window.onscroll = function () { 
-    console.log(document.body.scrollTop)
     if (document.body.scrollTop > 250) {
       scrollToAbout();
     }
@@ -92,4 +89,3 @@ $(document).ready(function () {
 
 })
 
-//status scrolling
